@@ -5,36 +5,18 @@ import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 //> Components
-/**
- * Footer: Global Footer
- * Navbar: Global navigation bar
- */
-import {
-  Footer,
-  Navbar,
-} from "./components/molecules";
-// Routes
-import Routes from "./Routes";
+//LandingPage
+import { LandingPage } from "./components/pages";
 
 class App extends React.Component {
   render() {
-    return (
-      <Router>
-        <div className="flyout">
-          <Navbar />
-          <main>
-            <Routes />
-          </main>
-          <Footer />
-        </div>
-      </Router>
-    );
+    return <LandingPage />;
   }
 }
 
 export default App;
 
-/** 
+/**
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2019 Werbeagentur Christian Aichner
+ * Copyright © 2019-2020 Werbeagentur Christian Aichner
  */
