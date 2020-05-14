@@ -1,8 +1,6 @@
 //> React
 // Contains all the functionality necessary to define React components
 import React from "react";
-// DOM bindings for React Router
-import { BrowserRouter as Router } from "react-router-dom";
 
 //> Components
 //LandingPage
