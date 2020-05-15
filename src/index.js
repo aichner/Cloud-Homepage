@@ -26,11 +26,11 @@ import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 
 // Render the root component to <div id="root"></div>
-ReactDOM.render( <App /> , document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 
 registerServiceWorker();
 
-/** 
+/**
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2019 Werbeagentur Christian Aichner
+ * Copyright © 2019-2020 Werbeagentur Christian Aichner
  */
