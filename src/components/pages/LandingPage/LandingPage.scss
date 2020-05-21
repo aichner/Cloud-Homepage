@@ -6,14 +6,6 @@
   text-align: center !important;
 }
 
-.text-center {
-  font-size: 4rem;
-}
-
-.text-1 {
-  font-size: 2rem;
-}
-
 html {
   min-height: 100%;
   position: relative;
@@ -21,6 +13,25 @@ html {
 
 body {
   height: 100%;
+
+  #logo {
+    .st0 {
+      fill: #212529;
+    }
+    .st1 {
+      fill: #f61a42;
+    }
+    height: 120px;
+    width: auto;
+    fill: black;
+  }
+
+  .main-content {
+    span,
+    i {
+      color: #f61a42;
+    }
+  }
 }
 
 .container {

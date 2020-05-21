@@ -4,11 +4,11 @@ import React from "react";
 
 //> MDB
 // "Material Design for Bootstrap" is a great UI design framework
-import { MDBContainer } from "mdbreact";
+import { MDBContainer, MDBIcon, MDBBtn } from "mdbreact";
 
 //> Images
 // Logo of Advertisement Agency Christian Aichner
-import AgencyLogo from "../../../assets/agency-small.png";
+import { ReactComponent as Logo } from "../../../assets/logo.svg";
 
 //> CSS
 import "./LandingPage.scss";
@@ -19,11 +19,27 @@ class LandingPage extends React.Component {
       <>
         <MDBContainer>
           <div className="flex-center">
-            <div>
-              <img src={AgencyLogo} height="50px" />
+            <div className="mb-5">
+              <Logo id="logo" />
             </div>
-            <div className="text-center">Aichner Cloud</div>
-            <div className="text-1">Web Services built and provided by us</div>
+            <div className="text-center main-content">
+              <MDBIcon icon="cloud" size="2x" />
+              <h2 className="font-weight-bold mb-0">
+                aichner<span>.cloud</span>
+              </h2>
+            </div>
+            <div className="text-muted mb-2">
+              Web Services built and provided by us.
+            </div>
+            <div>
+              <a
+                href="https://www.github.com/aichner"
+              >
+                <MDBBtn color="elegant">
+                  <MDBIcon fab icon="github" className="pr-1" /> Github
+                </MDBBtn>
+              </a>
+            </div>
           </div>
         </MDBContainer>
       </>
